@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="CSS/style_inicio.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <title>
+      Juego Número
+    </title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="cont-titulo">
+        <h1>JUEGO NUMEROS</h1>
+      </div>
+      <div id="cont-juego">
+      <input type="radio" class="radio-button" id="boton-individual" label="Modo Indivudual" name="radiobtn" checked onclick="cambiarModo(event)">
+        <div id="cont-central">
+          <div id="contenedor-imagen">
+            <img id="imagen_jugador" src="IMAGENES/MarioSolo.png">
+          </div>
+        </div>
+        <input type="radio" class="radio-button" id="boton-online" label="Modo Online" name="radiobtn" onclick="cambiarModo(event)">
+      </div>
+      <div id="cont-final">
+        <a href="/HTML/index_individual.html" id="enlace-jugar">
+          <button id="boton-jugar">
+            play
+          </button>
+        </a>
+      </div>
+    </div>
+    <script src="/JavaScript/script_inicio.js"></script>
+  </body>
+</html>

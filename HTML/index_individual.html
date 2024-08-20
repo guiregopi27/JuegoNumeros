@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/style_individual.css">
+    <script src="/JavaScript/script_individual.js"></script>
+    <script src="/JavaScript/script_compartido.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    
+    <title>
+      Juego Número 
+    </title>
+  </head>
+  <body>
+    <div id="contenedor-padre">
+      <div id="contenedor-cabecera">
+        <div id="contenedor-titulo">
+          <a href="/index.html">
+            <img src="/IMAGENES/home-1.svg">
+          </a>
+          <h1>Juego Números</h1>
+          <img src="/IMAGENES/info-square.svg">
+        </div>
+        <div id="contenedor-intentos">
+          <div id="intentos-div">Intentos</div>
+          <div id="aciertos-div">Aciertos</div>
+        </div>
+      </div>
+      <div id="contenedor-historial">
+        <div id="intentos-lista"></div>
+        <div id="aciertos-lista"></div>
+      </div>
+      <div id="contenedor-final">
+        <div id="contenedor-numeros">
+          <input maxlength="1" class="in-numeros" id="numero1" autocomplete="off" onkeypress="return digito(event)">
+          <input maxlength="1" class="in-numeros" id="numero2" autocomplete="off" onkeypress="return digito(event)">
+          <input maxlength="1" class="in-numeros" id="numero3" autocomplete="off" onkeypress="return digito(event)">
+          <input maxlength="1" class="in-numeros" id="numero4" autocomplete="off" onkeypress="return digito(event)">
+        </div>
+        <div id="contenedor-boton-comprobar">
+          <button onclick="comprobarNumero()" id="boton_comprobar">Comprobar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
